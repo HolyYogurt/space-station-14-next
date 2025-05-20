@@ -78,7 +78,7 @@ public sealed partial class SmartFridgeMenu : FancyWindow
             }
 
             var itemText = $"{entry.ItemName} [{entry.Quantity}]";
-            listData.Add(new VendorItemsListData(prototype.ID, i));
+            listData.Add(new VendorItemsListData(prototype.ID, i) { ItemText = itemText });
         }
 
         VendingContents.PopulateList(listData);
